@@ -1,3 +1,6 @@
+<?php 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,17 @@
 </head>
 <body>
     <h1>PHP Badwords</h1>
-    <p></p>
+    <p>
+        <?php
+            // Creo una stringa
+            $string = "A me mi piace la nutella";
+
+            // Stampo a schermo la stringa
+            echo $string;
+
+            // Stampo a schermo la lunghezza della stringa
+            echo strlen($string);
+        ?>
+    </p>
 </body>
 </html>
