@@ -16,11 +16,23 @@
             // Creo una stringa
             $string = "A me mi piace la nutella";
 
+            // Sostituisco la parola "mi" con quella inserita nella query string che viene recuperata tramite metodo GET
+            $stringWordChange = str_replace('mi', $_GET["word"], $string);
+
             // Stampo a schermo la stringa
-            echo $string;
+            echo $string . "&nbsp; --> ";
 
             // Stampo a schermo la lunghezza della stringa
             echo strlen($string);
+        ?>
+    </p>
+    <p>
+        <?php
+            // Stampo a schermo la nuova stringa
+            echo $stringWordChange . "&nbsp; --> ";
+
+            // Stampo a schermo la nuova lunghezza della stringa
+            echo strlen($stringWordChange);
         ?>
     </p>
 </body>
