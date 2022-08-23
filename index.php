@@ -1,6 +1,3 @@
-<?php 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +17,7 @@
             $stringWordChange = str_replace('mi', $_GET["word"], $string);
 
             // Stampo a schermo la stringa
-            echo $string . "&nbsp; --> ";
+            echo $string . " --> ";
 
             // Stampo a schermo la lunghezza della stringa
             echo strlen($string);
@@ -29,7 +26,7 @@
     <p>
         <?php
             // Stampo a schermo la nuova stringa
-            echo $stringWordChange . "&nbsp; --> ";
+            echo $stringWordChange . " --> ";
 
             // Stampo a schermo la nuova lunghezza della stringa
             echo strlen($stringWordChange);
